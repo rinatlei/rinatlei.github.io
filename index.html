@@ -13,55 +13,48 @@
     }
     body {
       font-family: 'Fredoka', sans-serif;
-      display: flex;
-      min-height: 100vh;
-      background-color: #2b2b2b;
+      background: linear-gradient(to right, #3b1f2b, #1a1a2e); /* deep plum to midnight blue */
       color: #f5f5f5;
-    }
-    .sidebar {
-      width: 250px;
-      background-color: #1e1e1e;
-      padding: 2rem 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .sidebar h1 {
-      font-size: 1.5rem;
-      color: #ffffff;
-      margin-bottom: 0.5rem;
-    }
-    .sidebar .subtitle {
-      font-size: 1rem;
-      color: #aaa;
-      text-align: center;
-    }
-    .main-content {
-      flex-grow: 1;
-      background-color: #2b2b2b;
       padding: 2rem;
     }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
     .profile-pic {
-      width: 120px;
-      height: 120px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 1rem;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
+    h1 {
+      font-size: 2.5rem;
+      color: #ffccff;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
     section {
-      background: #1e1e1e;
+      background: rgba(255, 255, 255, 0.05);
       border-radius: 10px;
       padding: 1.5rem;
       margin-bottom: 2rem;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
     h2 {
-      color: #87cefa;
+      color: #ffb6c1;
       margin-bottom: 1rem;
     }
     a {
-      color: #ffa07a;
+      color: #87cefa;
       text-decoration: none;
     }
     a:hover {
@@ -73,26 +66,16 @@
       font-size: 0.9rem;
       color: #999;
     }
-    @media (max-width: 768px) {
-      body {
-        flex-direction: column;
-      }
-      .sidebar {
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        gap: 1rem;
-      }
-    }
   </style>
 </head>
 <body>
-  <div class="sidebar">
-    <img src="5e84b022-8c50-4e4b-a53b-b3477d8166cc.jpeg" alt="Rinat Leibovich" class="profile-pic">
-    <h1>Rinat Leibovich</h1>
-    <p class="subtitle">Data Analytics Portfolio</p>
-  </div>
-  <div class="main-content">
+  <div class="container">
+    <header>
+      <img src="5e84b022-8c50-4e4b-a53b-b3477d8166cc.jpeg" alt="Rinat Leibovich" class="profile-pic">
+      <h1>Rinat Leibovich</h1>
+      <p class="subtitle">Leading social impact programs through data, systems thinking & collaboration</p>
+    </header>
+
     <section>
       <h2>About</h2>
       <p>
